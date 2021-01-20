@@ -1,0 +1,20 @@
+extend type Query {
+    users:[User]
+}
+
+extend type Mutation {
+    createUser(user:UserCreationDTO):User
+}
+
+type User{
+    name:String
+    email:String
+    password:String
+    registrationDate:String
+}
+
+input UserCreationDTO{
+    name:String!
+    email:String!
+    password:String!
+}

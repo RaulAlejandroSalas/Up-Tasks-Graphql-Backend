@@ -1,0 +1,17 @@
+extend type Query {
+    courses:[Course]
+}
+
+extend type Mutation {
+    createCourse(course:CourseDTO):Course
+}
+
+type Course{
+    title:String
+    tech:String
+}
+
+input CourseDTO{
+    title:String
+    tech:String
+}

@@ -1,0 +1,24 @@
+#Article
+extend type Query {
+    articles: [Article]
+}
+
+extend type Mutation {
+    createArticle(articleCreation: ArticleCreation):Article
+}
+
+type Article{
+    id:String
+    registrationDate: String
+    barCode:Int
+    description:String
+    price:String
+    provider:String
+}
+
+input ArticleCreation{
+    barCode:Int!
+    description:String!
+    price:String
+    provider:String
+}
