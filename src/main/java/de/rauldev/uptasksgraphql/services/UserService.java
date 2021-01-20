@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class UserService {
     private IUserRepository userRepository;
 
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    private BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
     @Autowired
     public UserService(IUserRepository userRepository){
         this.userRepository = userRepository;
