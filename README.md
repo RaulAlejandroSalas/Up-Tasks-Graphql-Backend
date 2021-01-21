@@ -1,6 +1,6 @@
 # Up-Tasks-Graphql-Backend
 
-The Current Project is a implementation of the  Tasks Project Management System, developing using Spring
+The Current Project is an implementation of Tasks Project Management System, developing using Spring
 Boot Framework and GraphQL, GraphQL is protocol agnostic, it means that you can use it 
 with any protocol as long as you can send and retrieve a string.
 
